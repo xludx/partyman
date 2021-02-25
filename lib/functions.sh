@@ -488,7 +488,7 @@ install_particld(){
     # pummel it --------------------------------------------------------------
 
     if [ $PARTYD_RUNNING == 1 ]; then
-        pending " --> ${messages["stopping"]} partcld. ${messages["please_wait"]}"
+        pending " --> ${messages["stopping"]} particld. ${messages["please_wait"]}"
         $PARTY_CLI stop >/dev/null 2>&1
         sleep 15
         killall -9 particld particl-shutoff >/dev/null 2>&1
@@ -666,7 +666,7 @@ update_particld(){
         # pummel it --------------------------------------------------------------
 
         if [ $PARTYD_RUNNING == 1 ]; then
-            pending " --> ${messages["stopping"]} partcld. ${messages["please_wait"]}"
+            pending " --> ${messages["stopping"]} particld. ${messages["please_wait"]}"
             $PARTY_CLI stop >/dev/null 2>&1
             sleep 15
             killall -9 particld particl-shutoff >/dev/null 2>&1

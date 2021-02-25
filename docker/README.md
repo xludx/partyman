@@ -53,6 +53,19 @@ TODO
 
 TODO
 
+## Update (docker swarm)
+
+TODO
+
+```
+docker pull ludx/partyman:0.3
+docker service update --image ludx/partyman:0.3 partyman_partyman
+./partyman.sh update
+./partyman.sh status
+```
+
+`./partyman.sh update` doesn't seem to fully work. Right now you still need to manually update the symbolic links.
+
 # Usage
 
 - `./partyman.sh` to run the partyman script in the container.
